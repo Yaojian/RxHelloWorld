@@ -83,5 +83,11 @@
     <None Include="packages.config" />
     <None Include="Readme.md" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RxFormsLib\RxFormsLib.csproj">
+      <Project>{9E5034A8-C442-46A9-BD76-33B23FFC3194}</Project>
+      <Name>RxFormsLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
 </Project>

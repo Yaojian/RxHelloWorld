@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxHelloWorld", "RxHelloWorld\RxHelloWorld.csproj", "{94A13108-5438-43AA-8E9E-29B2DE49B4A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxFormsLib", "RxFormsLib\RxFormsLib.csproj", "{9E5034A8-C442-46A9-BD76-33B23FFC3194}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{94A13108-5438-43AA-8E9E-29B2DE49B4A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94A13108-5438-43AA-8E9E-29B2DE49B4A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94A13108-5438-43AA-8E9E-29B2DE49B4A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E5034A8-C442-46A9-BD76-33B23FFC3194}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E5034A8-C442-46A9-BD76-33B23FFC3194}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E5034A8-C442-46A9-BD76-33B23FFC3194}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E5034A8-C442-46A9-BD76-33B23FFC3194}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

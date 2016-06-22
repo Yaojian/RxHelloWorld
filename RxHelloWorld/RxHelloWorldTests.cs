@@ -1,6 +1,8 @@
 ﻿using System;
 using ReactiveUI;
 using NUnit.Framework;
+using RxFormsLib;
+using System.Reactive;
 
 namespace RxHelloWorld
 {
@@ -15,10 +17,19 @@ namespace RxHelloWorld
         }
 
         [Test]
-        public void Create_ReactiveObject_should_be_successfully()
+        public void Create_ReactiveObject_should_be_successful()
         {
             var model = new HelloWorldModel();
             Assert.NotNull(model);
+        }
+
+        [Test]
+        public void Create_HelloWorldInLibModel_should_be_successful()
+        {
+            var model = new HelloWorldInLibModel();
+            Assert.NotNull(model);
+
+            //model.Say.Execute(Unit.Default);
         }
     }
 
