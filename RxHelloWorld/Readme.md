@@ -252,3 +252,7 @@ Failed with message in `Application Output` window:
 ERROR: System.IO.FileNotFoundException: Could not load file or assembly 'RxHelloWorld, Version=1.0.6017.32243, Culture=neutral, PublicKeyToken=null' or one of its dependencies
 File name: 'RxHelloWorld, Version=1.0.6017.32243, Culture=neutral, PublicKeyToken=null'
 ```
+
+== Step: Use `Rx-Xaml` instead of `Rx-XAML` ===
+
+Still the same error
