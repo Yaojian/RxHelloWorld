@@ -58,15 +58,12 @@
     <Reference Include="System.Reactive.PlatformServices">
       <HintPath>..\packages\Rx-PlatformServices.2.2.5\lib\net45\System.Reactive.PlatformServices.dll</HintPath>
     </Reference>
-    <Reference Include="Splat">
-      <HintPath>..\packages\Splat.1.0.0\lib\Net45\Splat.dll</HintPath>
-    </Reference>
     <Reference Include="System.Reactive.Windows.Threading">
       <HintPath>..\packages\Rx-XAML.2.2.5\lib\net45\System.Reactive.Windows.Threading.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="ReactiveUI">
-      <HintPath>..\packages\reactiveui-core.6.5.0\lib\Net45\ReactiveUI.dll</HintPath>
+      <HintPath>..\packages\reactiveui-core.6.5.0\lib\Xamarin.Mac10\ReactiveUI.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Reactive.Testing">
       <HintPath>..\packages\Rx-Testing.2.2.5\lib\net45\Microsoft.Reactive.Testing.dll</HintPath>
@@ -74,6 +71,9 @@
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
     <Reference Include="ReactiveUI.Testing">
       <HintPath>..\packages\reactiveui-testing.6.5.0\lib\net45\ReactiveUI.Testing.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.1.6.2\lib\Xamarin.Mac10\Splat.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

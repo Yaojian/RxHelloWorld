@@ -218,3 +218,37 @@ RxHelloWorldTests.cs(25,36): error CS7069: Reference to type `Splat.IEnableLogge
 
 ```
 
+== Step: Update Splat to 1.6.2 ==
+
+=== Build Result ===
+
+Build succeed with 3 warnings:
+
+```
+/Library/Frameworks/Mono.framework/Versions/4.4.0/lib/mono/4.5/Microsoft.Common.targets:  warning : Reference 'System.Reactive.Windows.Threading' not resolved
+/Library/Frameworks/Mono.framework/Versions/4.4.0/lib/mono/4.5/Microsoft.Common.targets:  warning : Reference 'WindowsBase' not resolved
+/Library/Frameworks/Mono.framework/Versions/4.4.0/lib/mono/4.5/Microsoft.Common.targets:  warning : Reference 'Microsoft.VisualStudio.QualityTools.UnitTestFramework' not resolved
+```
+
+=== Test case: Create_ReactiveObject_should_be_successfully ===
+
+Failed with message in `Application Output` window:
+
+```
+Can't find custom attr constructor image: /Users/yaojian/Documents/Projects/RxHelloWorld/RxHelloWorld/bin/Debug/ReactiveUI.dll mtoken: 0x0a000011
+Unhandled loader error: 8, (null) PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (null)
+* Assertion: should not be reached at loader.c:299
+```
+
+== Step: Modify the csproj ==
+
+Modify the .csproj to change the path part from `Net45` to `Xamarin.Mac10` for the Splat and ReactiveUI references.
+
+=== Test Result for: Create_ReactiveObject_should_be_successfully ===
+
+Failed with message in `Application Output` window:
+
+```
+ERROR: System.IO.FileNotFoundException: Could not load file or assembly 'RxHelloWorld, Version=1.0.6017.32243, Culture=neutral, PublicKeyToken=null' or one of its dependencies
+File name: 'RxHelloWorld, Version=1.0.6017.32243, Culture=neutral, PublicKeyToken=null'
+```
