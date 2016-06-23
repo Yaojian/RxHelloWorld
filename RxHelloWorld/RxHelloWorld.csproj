@@ -40,9 +40,15 @@
     <UseSGen>false</UseSGen>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="Xamarin.Mac" />
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Mac">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
     </Reference>
@@ -61,7 +67,9 @@
     <Reference Include="System.Reactive.Windows.Threading">
       <HintPath>..\packages\Rx-Xaml.2.2.5\lib\net45\System.Reactive.Windows.Threading.dll</HintPath>
     </Reference>
-    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsBase">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="ReactiveUI">
       <HintPath>..\packages\reactiveui-core.6.5.0\lib\Xamarin.Mac10\ReactiveUI.dll</HintPath>
     </Reference>
@@ -72,12 +80,13 @@
       <HintPath>..\packages\reactiveui-testing.6.5.0\lib\net45\ReactiveUI.Testing.dll</HintPath>
     </Reference>
     <Reference Include="Splat">
-      <HintPath>..\packages\Splat.1.6.2\lib\Xamarin.Mac10\Splat.dll</HintPath>
+      <HintPath>..\packages\Splat.1.6.2\lib\MonoMac\Splat.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="RxHelloWorldTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="HelloWorldModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
